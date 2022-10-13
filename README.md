@@ -6,5 +6,7 @@ Hosted at: https://44-563-web-apps-f22.github.io/44563-webapps-assignment-7-hell
 
 
 Treasure: https://44-563-web-apps-f22.github.io/44563-webapps-assignment-7-hellmanfredrik/treasure.html
+
 Cycler: https://44-563-web-apps-f22.github.io/44563-webapps-assignment-7-hellmanfredrik/cycler.html
+
 Reaction: https://44-563-web-apps-f22.github.io/44563-webapps-assignment-7-hellmanfredrik/reaction.html
