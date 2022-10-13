@@ -16,10 +16,10 @@
   <p id="target">Your time</p>
   <p id="countdown">Count</p>
 
-  <button class="btn btn-primary" value="Start timer" onclick="recordReact()">
+  <button class="btn btn-primary" value="Start timer" onclick="startTime()">
 
   </button>
-  <button class="btn btn-primary" value="React now">
+  <button class="btn btn-primary" value="React now" onclick="recordReact()">
     
 </button>
 
@@ -30,6 +30,21 @@ function recordReact() {
     myTime = Date.now()
     console.log(myTime)
 }
+
+function countdown(i){
+    document.getElementById("countdown").innerHTML = i
+}
+
+function startTime(){
+    for(var i = 0; i<5; i++) {
+        setTimeout(() => {
+            countdown(i)
+        }, (3-i)*1000);
+        
+  }
+  }
+
+
 
 
     </script>
