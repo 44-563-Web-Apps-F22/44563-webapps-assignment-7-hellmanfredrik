@@ -25,6 +25,8 @@
 <body>
     <h2>Fredrik builds a cycler</h2>
     <input type="text" id="input">
+    <button id="get" onclick="get()">Get</button>
+    <button id="spin" onclick="spin()">Spin</button>
 		<div class="flex-container" id="target">
 		  <div class="cycler">row item 1</div>   
 		  <div class="cycler">row item 2</div>  
@@ -53,5 +55,22 @@
 		container.appendChild(element)
 		
 	}
+
+    function get() {
+        cyclerItems = document.getElementsByClassName("cycler")
+        if (cyclerItems.length > 0) {
+            cyclerItems[cyclerItems.length-1].remove()
+        }
+    }
+
+    function spin() {
+        cyclerItems = document.getElementsByClassName("cycler")
+        if(cyclerItems.length > 1) {
+            removedItem = cyclerItems[cyclerItems.length-1]
+            y = document.getElementById("target")
+            y.insertBefore(removedItem, y.firstChild)
+
+        }
+    }
 </script>
 </html>	
